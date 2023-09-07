@@ -1,0 +1,20 @@
+.minister-container {
+  background-color: white;
+  color: #1e1e1e;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  animation: onCreate 0.75s forwards;
+}
+
+@keyframes onCreate {
+  from {
+    width: 7.5rem;
+    height: 2.5rem;
+  }
+
+  to {
+    width: 80rem;
+    height: 50rem;
+  }
+}

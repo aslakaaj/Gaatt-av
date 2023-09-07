@@ -4,3 +4,10 @@
     align-items: center;
     text-align: center;
 }
+
+.main-info {
+    background-color: white;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+}

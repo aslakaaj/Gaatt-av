@@ -1,6 +1,8 @@
 :root{
   --left-side-color: #FF4545;
   --right-side-color: #45A6FF;
+
+  font-size: 62.5%;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
   color: white;
   display: grid;
   justify-content: center;
-  
+  font-size: 1.6rem;
 }
 
 code {

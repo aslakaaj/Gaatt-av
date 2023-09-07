@@ -3,7 +3,14 @@
     {
       "name": "Støre",
       "side": "left",
-      "num": 6
+      "num": 6,
+      "ministers": [
+        {
+          "name": "This is a name",
+          "desc": "Dette er en test",
+          "img": "./Ole_Borten_Moe.jpg"
+        }
+      ]
     }
   ]
 }
