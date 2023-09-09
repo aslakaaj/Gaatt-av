@@ -1,20 +1,29 @@
 .minister-container {
   background-color: white;
   color: #1e1e1e;
+  box-shadow: #1e1e1ea1 0.1rem 0.3rem 0.5rem;
   border-radius: 1rem;
   overflow: hidden;
-
+  padding: 2rem;
+  row-gap: 1rem;
   animation: onCreate 0.75s forwards;
+}
+
+.minister-container ul {
+  padding: 0;
+  margin: 0;
 }
 
 @keyframes onCreate {
   from {
     width: 7.5rem;
     height: 2.5rem;
+    margin-top: 5rem;
   }
 
   to {
-    width: 80rem;
-    height: 50rem;
+    width: 90rem;
+    height: auto;
+    margin-top: 5rem;
   }
 }

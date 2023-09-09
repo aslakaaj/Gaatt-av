@@ -5,12 +5,14 @@ import MinisterInfoContainer from "./MinisterInfoContainer";
 
 const Header = (props) => {
     const [info, setInfo] = useState(false);
+    const [firstTimeRenderDone, setFirstTimeRenderDone] = useState(false);
 
     const mouseEnterHandler = () => {
         setInfo(true);
     }
 
     const mouseExitHandler = () => {
+      setFirstTimeRenderDone(true);
       setInfo(false);
     }
 
@@ -20,7 +22,8 @@ const Header = (props) => {
       <h1 className="main-title">Hvor mange har <br/> gått av som statsråd?</h1>
       <h1 className="main-number">{data.regjeringer[0].num}</h1>
 
-      {!info && <div className="main-info" onMouseEnter={mouseEnterHandler}></div>}
+      {!info && !firstTimeRenderDone && <div className="main-info" onMouseEnter={mouseEnterHandler}></div>}
+      {!info && firstTimeRenderDone && <div style={{animation: 'onLeave 0.25s forwards'}} className="main-info" onMouseEnter={mouseEnterHandler}></div>}
       {info && <MinisterInfoContainer mouseLeave={mouseExitHandler}/>}
     </div>
   );

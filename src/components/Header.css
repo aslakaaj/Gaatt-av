@@ -1,13 +1,44 @@
-.main-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.main-box {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-box h1,
+p {
+  margin: 0;
+}
+
+.main-title {
+  font-size: 4rem;
+}
+
+.main-number {
+  font-size: 7rem;
 }
 
 .main-info {
-    background-color: white;
-    width: 7.5rem;
-    height: 2.5rem;
-    border-radius: 1rem;
+  background-color: white;
+  box-shadow: #1e1e1ea1 0.1rem 0.1rem 0.2rem;
+  margin-top: 5rem;
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 1rem;
 }
+
+@keyframes onLeave {
+  
+    from {
+      width: 90rem;
+      height: 50rem;
+      margin-top: 5rem;
+    }
+    to {
+      width: 7.5rem;
+      height: 2.5rem;
+      margin-top: 5rem;
+    }
+  }

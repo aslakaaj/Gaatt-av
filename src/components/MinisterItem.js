@@ -1,22 +1,32 @@
 import styles from "./MinisterItem.module.css";
 import data from '../data/data.json';
+import { useEffect, useState } from "react";
 
-const MinisterItem = () => {
+const MinisterItem = (props) => {
+  const [imgSrc, setImgSrc] = useState(null);
+
+  useEffect(() => {
+    import(`../images/${props.img}`).then((image) =>{
+      setImgSrc(image.default);
+    })
+    .catch((error) =>{
+      console.error('Error importing image: ', error)
+    }, [props.img]);
+
+  })
+
   return (
-    <div className={styles.item}>
+    <li className={styles.item}>
       <div className={styles["column-left"]}>
-        <img src={require("./Ole_Borten_Moe.jpg")} />
+      {imgSrc && <img src={imgSrc} alt={props.name} />}
       </div>
       <div className={styles["column-right"]}>
-        <h1>{data.regjeringer[0].ministers[0].name}</h1>
+        <h1>{props.name}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-          aspernatur saepe consectetur veritatis autem harum, deserunt eveniet
-          amet labore ipsa maiores perferendis nam sed repudiandae, ea ab, sint
-          minus. Et! {data.regjeringer[0].ministers[0].desc}
+          {props.desc}
         </p>
       </div>
-    </div>
+    </li>
   );
 };
 

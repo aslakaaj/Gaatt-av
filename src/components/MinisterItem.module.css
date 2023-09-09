@@ -1,15 +1,22 @@
 .item {
     max-width: 100%;
-    height: 20rem;
+    height: 30rem;
     padding: 0 2rem;
 
     display: grid;
     columns: 2;
+    column-gap: 10rem;
+    justify-content: space-between;
+    padding: 0;
+}
+
+li + li {
+    margin-top: 5rem;
 }
 
 .column-left {
     grid-column: 1;
-    max-height: 20rem;
+    max-height: 30rem;
 }
 
 .column-left img {
@@ -19,6 +26,6 @@
 
 .column-right{
     grid-column-start: 2;
-    text-align: end;
+    text-align: right;
 }
 
