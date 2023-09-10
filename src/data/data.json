@@ -3,26 +3,29 @@
     {
       "name": "Støre",
       "side": "left",
-      "num": 6,
       "ministers": [
         {
           "name": "Ola Borten Moe",
-          "desc": "Varslet sin avgang som forsknings- og høyere utdanningsminister og som nestleder i Senterpartiet 21. juli 2023 etter at E24 avslørte at Moe hadde brutt regjeringens habilitetsregler. Han hadde kjøpt aksjer i våpen- og teknologiselskapet Kongsberg Gruppen og deretter deltatt i en regjeringskonferanse der selskapet indirekte ble tildelt en kontrakt.",
+          "desc": "Varslet sin avgang som statsråd og som nestleder i Senterpartiet 21. juli 2023 etter at E24 avslørte at Moe hadde brutt regjeringens habilitetsregler. Han hadde kjøpt aksjer i våpen- og teknologiselskapet Kongsberg Gruppen og deretter deltatt i en regjeringskonferanse der selskapet indirekte ble tildelt en kontrakt.",
+          "role": "Forsknings- og Høyere utdanningsminister",
           "img": "Ole_Borten_Moe.webp"
         },
         {
           "name": "Anette Trettebergstuen",
           "desc": "Kunngjorde 23. juni 2023 at hun ønsket å gå av som kulturminister på grunn av alvorlige feil hun hadde gjort knyttet til habilitet overfor tre personer. Hun uttalte at hun hadde hatt en feil tolkning eller feil forståelse av habilitetsreglene.",
+          "role": "Kultur- og Likestillingsminister",
           "img": "Anette_Trettebergstuen.webp"
         },
         {
           "name": "Odd Roger Enoksen",
           "desc": "I april 2022 leverte Hilde Lengali, tidligere nestleder i Nordland Senterparti, et formelt varsel om upassende oppførsel og kommentarer fra Enoksen, i 2000 til 2001. Enoksen beklaget hendelsene. Senere kom en anonym kvinne fram med en lignende historie om sitt forhold til Enoksen da han var olje- og energiminister. Som følge av disse hendelsene kunngjorde Enoksen sin avgang som forsvarsminister den 9. april 2022.",
+          "role": "Forsvarminister",
           "img": "Odd_Roger_Enoksen2.webp"
         },
         {
           "name": "Hadia Tajik",
           "desc": "I mars 2022 kunngjorde arbeids- og inkluderingsminister Hadia Tajik sin avgang som statsråd. Dette fulgte etter avsløringer i VG at Tajik, i perioden mellom 2006 og 2010, mottok skattefri pendlerbolig som politisk rådgiver, til tross for at hun aldri flyttet inn i eller betalte leie for en leiebolig i hjemfylket. I sin opprinnelige søknad til statsministerens kontor hadde Tajik oppgitt at hun ikke hadde boligutgifter på hjemstedet, og hun fikk deretter innvilget søknaden om pendlerbolig, men med beskjed om å skatte av boligens verdi. Bare seks dager senere sendte Tajik inn en ny søknad om pendlerbolig, denne gangen med opplysninger om boligutgifter på hjemstedet.",
+          "role": "Arbeids- og Inkluderingsminister",
           "img": "Hadia_Tajik.webp"
         }
       ]

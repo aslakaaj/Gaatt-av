@@ -1,6 +1,6 @@
 import "./MinisterInfoContainer.css";
 import MinisterItem from "./MinisterItem";
-import data from "../data/data.json";
+import data from "../../data/data.json";
 
 const MinisterInfoContainer = (props) => {
   const ministers = data.regjeringer[0].ministers;
@@ -9,7 +9,7 @@ const MinisterInfoContainer = (props) => {
     <div className="minister-container"  onMouseLeave={props.mouseLeave}>
       <ul>
         {ministers.map((minister) => (
-          <MinisterItem name={minister.name} desc={minister.desc} img={minister.img} />
+          <MinisterItem name={minister.name} desc={minister.desc} role={minister.role} img={minister.img} />
         ))}{" "}
       </ul>
     </div>

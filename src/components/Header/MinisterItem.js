@@ -1,12 +1,11 @@
 import styles from "./MinisterItem.module.css";
-import data from '../data/data.json';
 import { useEffect, useState } from "react";
 
 const MinisterItem = (props) => {
   const [imgSrc, setImgSrc] = useState(null);
 
   useEffect(() => {
-    import(`../images/${props.img}`).then((image) =>{
+    import(`../../images/${props.img}`).then((image) =>{
       setImgSrc(image.default);
     })
     .catch((error) =>{
@@ -22,6 +21,7 @@ const MinisterItem = (props) => {
       </div>
       <div className={styles["column-right"]}>
         <h1>{props.name}</h1>
+        <p className={styles["minister-role"]}>Tidligere {props.role}</p>
         <p>
           {props.desc}
         </p>

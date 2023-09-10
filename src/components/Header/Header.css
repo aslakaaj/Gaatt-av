@@ -17,16 +17,25 @@ p {
 }
 
 .main-number {
-  font-size: 7rem;
+  font-size: 12rem;
 }
 
 .main-info {
   background-color: white;
-  box-shadow: #1e1e1ea1 0.1rem 0.1rem 0.2rem;
+  /* box-shadow: #1e1e1ea1 0.1rem 0.1rem 0.2rem; */
   margin-top: 5rem;
   width: 7.5rem;
   height: 2.5rem;
   border-radius: 1rem;
+}
+
+.material-symbols-outlined {
+  color: black;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 @keyframes onLeave {
