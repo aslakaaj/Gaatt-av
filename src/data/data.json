@@ -29,6 +29,16 @@
           "img": "Hadia_Tajik.webp"
         }
       ]
+    },
+
+    {
+      "name": "Solberg",
+      "side": "right",
+      "ministers": [
+        {
+          "name": "Siv Jensen"
+        }
+      ]
     }
   ]
 }

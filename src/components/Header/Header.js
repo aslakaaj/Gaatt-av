@@ -18,12 +18,12 @@ const Header = (props) => {
 
   return (
     <div className="main-box">
-      <p>I {data.regjeringer[0].name} regjeringen:</p>
+      <p>I {data.regjeringer[props.index].name} regjeringen:</p>
       <h1 className="main-title">
         HVOR MANGE HAR <br /> GÅTT AV SOM STATSRÅD?
       </h1>
       <h1 className="main-number">
-        {data.regjeringer[0].ministers.length.toString()}
+        {data.regjeringer[props.index].ministers.length.toString()}
       </h1>
 
       {!info && !firstTimeRenderDone && (
