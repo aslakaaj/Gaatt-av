@@ -12,7 +12,11 @@ function App() {
     if (value > 0 && value > 5 && canScroll) {
       canScroll = false;
       setIndex(index++);
-      console.log("JA");
+    }
+
+    if (value < 0 && value < -5 && canScroll) {
+      canScroll = false;
+      setIndex(index -= 1);
     }
   });
 
