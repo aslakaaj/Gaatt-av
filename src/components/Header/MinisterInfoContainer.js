@@ -3,7 +3,7 @@ import MinisterItem from "./MinisterItem";
 import data from "../../data/data.json";
 
 const MinisterInfoContainer = (props) => {
-  const ministers = data.regjeringer[0].ministers;
+  const ministers = data.regjeringer[props.index].ministers;
 
   return (
     <div className="minister-container"  onMouseLeave={props.mouseLeave}>

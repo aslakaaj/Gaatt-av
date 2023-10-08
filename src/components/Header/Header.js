@@ -40,7 +40,7 @@ const Header = (props) => {
           <span class="material-symbols-outlined">more_horiz</span>
         </div>
       )}
-      {info && <MinisterInfoContainer mouseLeave={mouseExitHandler} />}
+      {info && <MinisterInfoContainer index={props.index} mouseLeave={mouseExitHandler} />}
     </div>
   );
 };
