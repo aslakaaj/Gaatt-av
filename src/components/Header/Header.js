@@ -28,7 +28,7 @@ const Header = (props) => {
 
       {!info && !firstTimeRenderDone && (
         <div className="main-info" onMouseEnter={mouseEnterHandler}>
-          <span class="material-symbols-outlined">more_horiz</span>
+          <span className="material-symbols-outlined">more_horiz</span>
         </div>
       )}
       {!info && firstTimeRenderDone && (
