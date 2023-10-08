@@ -31,7 +31,7 @@ function App() {
       }
 
       if (index >= maxIndexLength) {
-        console.warn("INDEX IS NOT NORMAL VALUE"); //Comment
+        console.warn("INDEX IS NOT NORMAL VALUE");
       }
     }
     
