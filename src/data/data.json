@@ -54,6 +54,27 @@
           "controverse": false
         },
         {
+          "name": "Robert Eriksson",
+          "desc": "I følge Siv Jensen sin selvbiografi \" Med Egne Ord \", så ble Eriksson sparket grunnet han inngikk et forhold til en av sine nærmeste rådgivere, som bød på habilitetsproblemer. Andre grunner skal ha vært at Eriksson skal ha vært i konflikt med arbeidsorganisasjonene, pga hannes agressive tone mot de.",
+          "role": "Arbeids- og sosialminister",
+          "img": "Robert_Eriksson.webp",
+          "controverse": true
+        },
+        {
+          "name": "Elisabeth Aspaker",
+          "desc": "Aspaker hadde allerede i 2014 sikret seg sin drømme jobb som fylkesmann i Troms, og mulig grunnlaget for avgangen i 2016.",
+          "role": "EU-minister",
+          "img": "Elisabeth_Aspaker.webp",
+          "controverse": false
+        },
+        {
+          "name": "",
+          "desc": "",
+          "role": "",
+          "img": "",
+          "controverse": false
+        },
+        {
           "name": "",
           "desc": "",
           "role": "",
