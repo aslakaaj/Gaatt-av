@@ -9,8 +9,8 @@ const MinisterInfoContainer = (props) => {
     <div className="minister-container"  onMouseLeave={props.mouseLeave}>
       <ul>
         {ministers.map((minister) => (
-          <MinisterItem name={minister.name} desc={minister.desc} role={minister.role} img={minister.img} />
-        ))}{" "}
+          <MinisterItem key={Math.random()} name={minister.name} desc={minister.desc} role={minister.role} img={minister.img} />
+        ))}
       </ul>
     </div>
   );

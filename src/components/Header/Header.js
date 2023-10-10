@@ -7,13 +7,24 @@ const Header = (props) => {
   const [info, setInfo] = useState(false);
   const [firstTimeRenderDone, setFirstTimeRenderDone] = useState(false);
 
+  console.log("PROPS INDEX: " + props.index);
+  //Changes the website background color depending on which side the selected government is on
+  if (data.regjeringer[props.index].side === "left" && props.index < data.regjeringer.length) {
+    document.body.style = `background-color: var(--left-side-color);`;
+  }
+  if (data.regjeringer[props.index].side === "right" && props.index < data.regjeringer.length) {
+    document.body.style = `background-color: var(--right-side-color);`;
+  }
+
   const mouseEnterHandler = () => {
     setInfo(true);
+    props.setInfoActive(true);
   };
 
   const mouseExitHandler = () => {
     setFirstTimeRenderDone(true);
     setInfo(false);
+    props.setInfoActive(false);
   };
 
   return (
@@ -37,7 +48,7 @@ const Header = (props) => {
           className="main-info"
           onMouseEnter={mouseEnterHandler}
         >
-          <span class="material-symbols-outlined">more_horiz</span>
+          <span className="material-symbols-outlined">more_horiz</span>
         </div>
       )}
       {info && <MinisterInfoContainer index={props.index} mouseLeave={mouseExitHandler} />}

@@ -15,16 +15,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: var(--left-side-color);
+  transition: background-color 1s;
+
   color: white;
   display: grid;
   justify-content: center;
   font-size: 1.6rem;
-}
-
-code {
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace; */
 }
 
 h1 {
