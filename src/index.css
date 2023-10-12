@@ -9,7 +9,6 @@
 :root::-webkit-scrollbar{
   display: none;
 }
-
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -18,8 +17,9 @@ body {
   transition: background-color 1s;
 
   color: white;
-  display: grid;
+  display: flex;
   justify-content: center;
+  height: auto;
   font-size: 1.6rem;
 }
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import data from "./data/data.json";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   var [index, setIndex] = useState(0);
@@ -46,6 +47,7 @@ function App() {
   return (
     <div>
       <Header index={index} setInfoActive={setMinisterInfoActive} />
+      <Footer/>
     </div>
   );
 }
