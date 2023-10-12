@@ -21,11 +21,11 @@ const Header = (props) => {
     props.setInfoActive(true);
   };
 
-  // const mouseExitHandler = () => {
-  //   setFirstTimeRenderDone(true);
-  //   setInfo(false);
-  //   props.setInfoActive(false);
-  // };
+  const mouseExitHandler = () => {
+    setFirstTimeRenderDone(true);
+    setInfo(false);
+    props.setInfoActive(false);
+  };
 
   return (
     <div className="main-box">
@@ -51,7 +51,7 @@ const Header = (props) => {
           <span className="material-symbols-outlined">more_horiz</span>
         </div>
       )}
-      {info && <MinisterInfoContainer index={props.index} />}
+      {info && <MinisterInfoContainer index={props.index} mouseLeave={mouseExitHandler} />}
     </div>
   );
 };
