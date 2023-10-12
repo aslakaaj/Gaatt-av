@@ -13,7 +13,7 @@ const MinisterItem = (props) => {
     }, [props.img]);
 
   })
-
+  
   return (
     <li className={styles.item}>
       <div className={styles["column-left"]}>

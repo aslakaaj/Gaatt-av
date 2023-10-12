@@ -9,10 +9,10 @@ const Header = (props) => {
 
   console.log("PROPS INDEX: " + props.index);
   //Changes the website background color depending on which side the selected government is on
-  if (data.regjeringer[props.index].side === "left" && props.index < data.regjeringer.length) {
+  if (data.regjeringer[props.index].side === "left" && props.index < data.regjeringer.length && props.index >= 0) {
     document.body.style = `background-color: var(--left-side-color);`;
   }
-  if (data.regjeringer[props.index].side === "right" && props.index < data.regjeringer.length) {
+  if (data.regjeringer[props.index].side === "right" && props.index < data.regjeringer.length && props.index >= 0) {
     document.body.style = `background-color: var(--right-side-color);`;
   }
 
