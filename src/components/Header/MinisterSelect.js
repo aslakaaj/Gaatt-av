@@ -1,4 +1,6 @@
 import data from "../../data/data.json";
+import "MinisterSelect.css";
+
 const MinisterSelect = () => {
   let ministerList = [];
   data.regjeringer.forEach((government) => {
