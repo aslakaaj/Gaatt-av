@@ -1,25 +1,21 @@
-import data from "../../data/data.json";
-import "MinisterSelect.css";
+import styles from "./MinisterSelect.module.css";
 
-const MinisterSelect = () => {
-  let ministerList = [];
-  data.regjeringer.forEach((government) => {
-    government.ministers.forEach((ministers) => {
-      ministerList.push(ministers.role);
-    });
-  });
-
-  let sortedMinisterList = [...new Set(ministerList)];
-
-  console.log(sortedMinisterList);
+const MinisterSelect = (props) => {
+  const changeHandler = (event) => {
+    let value = event.target.value;
+    props.selectDataCollect(value);
+  };
 
   return (
-    <select name="minister-posistion" id="selectPosition">
-      <option value="-1">Ingen...</option>
-      {sortedMinisterList.map((position, index) => {
-        return <option value={index}>{position}</option>;
-      })}
-    </select>
+    <div className={styles.wrapping}>
+      <label htmlFor="ministerSelect">Filtrer: </label>
+      <select id="ministerSelect" name="minister-posistion" onChange={changeHandler}>
+        <option value={null}>Ingen...</option>
+        {props.list.map((position) => {
+          return <option value={position}>{position}</option>;
+        })}
+      </select>
+    </div>
   );
 };
 

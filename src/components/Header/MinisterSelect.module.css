@@ -1,0 +1,6 @@
+.wrapping {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    column-gap: 1.5rem;
+}

@@ -5,7 +5,6 @@
   border-radius: 1rem;
   overflow: hidden;
   padding: 2rem;
-  row-gap: 1rem;
   animation: onCreate 0.75s forwards;
 }
 

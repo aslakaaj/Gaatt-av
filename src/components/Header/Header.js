@@ -22,9 +22,9 @@ const Header = (props) => {
   };
 
   const mouseExitHandler = () => {
-    setFirstTimeRenderDone(true);
-    setInfo(false);
-    props.setInfoActive(false);
+    // setFirstTimeRenderDone(true);
+    // setInfo(false);
+    // props.setInfoActive(false);
   };
 
   return (
