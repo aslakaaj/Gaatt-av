@@ -6,15 +6,15 @@
       "ministers": [
         {
           "name": "Anniken Huitfelt",
-          "desc": "",
+          "desc": "Huitfeldts avgang som utenriksminister ble delvis trigget av aksje- og habilitetssaker kontroversen knyttet til hennes ektemanns aksjehandler, noe hun ikke hadde holdt seg tilstrekkelig orientert om. Statsminister Jonas Gahr Støre nevnte også Erna Solbergs aksjeskandale som en årsak til avgangen. Selv om det ble spekulert i media om endringer i regjeringen, indikerte kilder at Huitfeldt ønsket å fortsette i rollen, og avgangen kan ha skjedd mot hennes vilje. Hennes tidligere valg om ikke å søke gjenvalg i Arbeiderpartiets sentralstyre ble også nevnt som en faktor.",
           "role":"Utenriksminister",
           "img": "Anniken_Huitfeldt.webp",
           "party": "AP",
-          "controverse": false
+          "controverse": true
         },
         {
           "name": "Bjørnar Skjæran",
-          "desc": "",
+          "desc": "Skjærans avgang som fiskeri- og havminister kom med statsminister Jonas Gahr Støres rokeringer i regjeringen, noe som skapte misnøye, spesielt i Nordland. Kritikk inkluderer Skjærans påståtte manglende tilstedeværelse og interesse, mens andre roser hans bidrag til partiet og regionen. Avgangen, som ser ut til å være en del av større rokeringer, ble sett på som overraskende og uforståelig av noen, spesielt gitt Skjærans tidligere bidrag og regionens behov for representasjon på høyeste politiske nivå.",
           "role":"Fiskeri- og Havminister",
           "img": "Bjørnar_Skjæran.webp",
           "party": "AP",

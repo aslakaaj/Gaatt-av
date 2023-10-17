@@ -21,7 +21,7 @@ const MinisterItem = (props) => {
       </div>
       <div className={styles["column-right"]}>
         <h1>{props.name}</h1>
-        <p className={styles["minister-role"]}>Tidligere {props.role}</p>
+        <p className={styles["minister-role"]}>Tidligere {props.role} ({props.party})</p>
         <p>
           {props.desc}
         </p>

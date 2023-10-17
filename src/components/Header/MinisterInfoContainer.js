@@ -47,6 +47,7 @@ const MinisterInfoContainer = (props) => {
                 desc={minister.desc}
                 role={minister.role}
                 img={minister.img}
+                party={minister.party}
               />
             ))
           : null}
