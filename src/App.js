@@ -13,22 +13,28 @@ function App() {
     function handleScroll(e) {
       const value = parseInt(e.deltaY);
 
-      if (value > 0 && value > 5 && canScroll && index !== maxIndexLength - 1 && !ministerInfoActive) {
-        setCanScroll(false);
-        setIndex((prevIndex) => prevIndex + 1);
+      if (value > 0 && value > 5 && canScroll && !ministerInfoActive) {
+        let newIndex = index + 1;
+        if (newIndex < maxIndexLength) {
+          setCanScroll(false);
+          setIndex(newIndex);
 
-        setTimeout(() => {
-          setCanScroll(true);
-        }, 1000); // Allow scrolling again after 1 second
+          setTimeout(() => {
+            setCanScroll(true);
+          }, 250); // Allow scrolling again after 1 second
+        }
       }
 
-      if (value < 0 && value < -5 && canScroll && index !== 0 && !ministerInfoActive) {
-        setCanScroll(false);
-        setIndex((prevIndex) => prevIndex - 1);
+      if (value < 0 && value < -5 && canScroll && !ministerInfoActive) {
+        let newIndex = index - 1;
+        if (newIndex >= 0) {
+          setCanScroll(false);
+          setIndex(newIndex);
 
-        setTimeout(() => {
-          setCanScroll(true);
-        }, 1000); // Allow scrolling again after 1 second
+          setTimeout(() => {
+            setCanScroll(true);
+          }, 250); // Allow scrolling again after 1 second
+        }
       }
 
       if (index >= maxIndexLength) {
@@ -47,7 +53,7 @@ function App() {
   return (
     <div>
       <Header index={index} setInfoActive={setMinisterInfoActive} />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
