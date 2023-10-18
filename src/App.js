@@ -2,12 +2,17 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import data from "./data/data.json";
 import Footer from "./components/Footer/Footer";
+import Disclaimer from "./components/Disclaimer/Disclaimer";
 
 function App() {
+  //Variables for scrolleffect
   var [index, setIndex] = useState(0);
   var [canScroll, setCanScroll] = useState(true);
   var [ministerInfoActive, setMinisterInfoActive] = useState(false);
   var maxIndexLength = data.regjeringer.length;
+
+  //Variables for disclaimer
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
 
   useEffect(() => {
     function handleScroll(e) {
@@ -50,10 +55,15 @@ function App() {
     };
   }, [canScroll, ministerInfoActive, index, maxIndexLength]);
 
+  const disclaimerTrigger = (setValue) => {
+    setShowDisclaimer(setValue);
+  };
+
   return (
     <div>
       <Header index={index} setInfoActive={setMinisterInfoActive} />
-      <Footer />
+      {showDisclaimer && <Disclaimer onClickChange={disclaimerTrigger} />}
+      <Footer onClickChange={disclaimerTrigger} />
     </div>
   );
 }

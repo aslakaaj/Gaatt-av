@@ -1,0 +1,15 @@
+.disclaimer-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 50rem;
+    z-index: 100;
+
+    background-color: white;
+    color: var(--dark-text-color);
+
+    padding: 2rem;
+    border-radius: 1rem;
+}

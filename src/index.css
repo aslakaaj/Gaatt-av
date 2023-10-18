@@ -1,6 +1,7 @@
 :root{
   --left-side-color: #FF4545;
   --right-side-color: #45A6FF;
+  --dark-text-color: #464646 ;
 
   font-size: 62.5%;
   scrollbar-width: none;
@@ -23,7 +24,7 @@ body {
   font-size: 1.6rem;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Anton', sans-serif;
 }
 
