@@ -13,3 +13,12 @@
     padding: 2rem;
     border-radius: 1rem;
 }
+
+.contact a{
+    color: var(--dark-text-color);
+    font-weight: bold;
+}
+
+.disclaimer-box p + p {
+    margin: 2rem 0;
+}
