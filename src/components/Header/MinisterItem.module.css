@@ -37,3 +37,17 @@ li + li {
     text-align: right;
 }
 
+@media only screen and (max-width: 60rem) {
+    .item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .column-right{
+        margin-top: 1rem;
+        text-align: center;
+    }
+  }
