@@ -46,12 +46,13 @@ function App() {
         console.warn("INDEX IS NOT NORMAL VALUE");
       }
     }
-
+    document.addEventListener("touchmove", handleScroll);
     document.addEventListener("wheel", handleScroll);
     console.log(index);
 
     return () => {
-      document.removeEventListener("wheel", handleScroll);
+    document.removeEventListener("touchmove", handleScroll);
+    document.removeEventListener("wheel", handleScroll);
     };
   }, [canScroll, ministerInfoActive, index, maxIndexLength]);
 
