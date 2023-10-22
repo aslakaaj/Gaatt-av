@@ -51,7 +51,7 @@ function App() {
     console.log(index);
 
     return () => {
-    document.removeEventListener("touchmove", handleScroll);
+    document.removeEventListener("touchmove", alert("SCROLLED"));
     document.removeEventListener("wheel", handleScroll);
     };
   }, [canScroll, ministerInfoActive, index, maxIndexLength]);
