@@ -12,7 +12,7 @@ const Footer = (props) => {
         Nettsiden er utviklet av{" "}
         <a href="aslakjonsson.com">Aslak Aa. Jønsson</a> © 2024
       </p>
-      <p onClick={clickHandler}>ANSVARSFRASKRIVELSE</p>
+      <p className="footer-disclaimer" onClick={clickHandler}>ANSVARSFRASKRIVELSE</p>
     </div>
   );
 };

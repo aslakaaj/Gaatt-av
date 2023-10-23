@@ -8,3 +8,7 @@
 
     transition: background-color .5s;
 }
+
+.custom-btn:hover{
+    cursor: pointer;
+}

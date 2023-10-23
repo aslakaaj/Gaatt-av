@@ -2,7 +2,22 @@ import "./MinisterInfoContainer.css";
 import MinisterItem from "./MinisterItem";
 import data from "../../data/data.json";
 import MinisterSelect from "./MinisterSelect";
-import { useState } from "react";
+import { useEffect, useState, useRef} from "react";
+
+const useOutsideAlerter = (ref, props) =>{
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        props.mouseLeave();
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref, props]);
+}
 
 const MinisterInfoContainer = (props) => {
   const [selectedMinisterRole, setSelectedMinisterRole] = useState(null);
@@ -32,8 +47,11 @@ const MinisterInfoContainer = (props) => {
     }
   });
 
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef, props);
+
   return (
-    <div className="minister-container" onMouseLeave={props.mouseLeave}>
+    <div className="minister-container" ref={wrapperRef} onMouseLeave={props.mouseLeave}>
       <MinisterSelect
         list={sortedMinisterPosList}
         selectDataCollect={selectDataHandler}

@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 30rem;
+    margin-top: auto;
     position: relative;
     text-align: center;
 }
@@ -8,4 +8,8 @@ a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+.footer-disclaimer:hover {
+    cursor: pointer;
 }

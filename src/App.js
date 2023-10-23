@@ -15,6 +15,40 @@ function App() {
   const [showDisclaimer, setShowDisclaimer] = useState(false);
 
   useEffect(() => {
+    let startY;
+
+    function handleTouchStart(e) {
+      startY = e.touches[0].clientY;
+    }
+
+    function handleTouchMove(e) {
+      const touchY = e.touches[0].clientY;
+      const value = startY - touchY;
+
+      if (value > 5 && canScroll && !ministerInfoActive) {
+        // Scroll ned
+        let newIndex = index + 1;
+        if (newIndex < maxIndexLength) {
+          setCanScroll(false);
+          setIndex(newIndex);
+
+          setTimeout(() => {
+            setCanScroll(true);
+          }, 250); // Allow scrolling again after 250ms
+        }
+      } else if (value < -5 && canScroll && !ministerInfoActive) {
+        // Scroll opp
+        let newIndex = index - 1;
+        if (newIndex >= 0) {
+          setCanScroll(false);
+          setIndex(newIndex);
+
+          setTimeout(() => {
+            setCanScroll(true);
+          }, 250); // Allow scrolling again after 250ms
+        }
+      }
+    }
     function handleScroll(e) {
       const value = parseInt(e.deltaY);
 
@@ -46,13 +80,14 @@ function App() {
         console.warn("INDEX IS NOT NORMAL VALUE");
       }
     }
-    document.addEventListener("touchmove", handleScroll);
     document.addEventListener("wheel", handleScroll);
-    console.log(index);
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchmove", handleTouchMove);
 
     return () => {
-    document.removeEventListener("touchmove", alert("SCROLLED"));
-    document.removeEventListener("wheel", handleScroll);
+      document.removeEventListener("wheel", handleScroll);
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
     };
   }, [canScroll, ministerInfoActive, index, maxIndexLength]);
 
@@ -61,7 +96,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <Header index={index} setInfoActive={setMinisterInfoActive} />
       {showDisclaimer && <Disclaimer onClickChange={disclaimerTrigger} />}
       <Footer onClickChange={disclaimerTrigger} />

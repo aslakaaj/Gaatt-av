@@ -6,6 +6,8 @@
   overflow: hidden;
   padding: 2rem;
   animation: onCreate 0.75s forwards;
+
+  margin-bottom: 3rem;
 }
 
 .minister-container ul {
