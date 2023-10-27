@@ -2,22 +2,23 @@ import "./MinisterInfoContainer.css";
 import MinisterItem from "./MinisterItem";
 import data from "../../data/data.json";
 import MinisterSelect from "./MinisterSelect";
-import { useEffect, useState, useRef} from "react";
+import { useEffect, useState, useRef } from "react";
+import MinisterCheckBox from "./MinisterCheckBox";
 
-const useOutsideAlerter = (ref, props) =>{
+const useOutsideAlerter = (ref, props) => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
         props.mouseLeave();
       }
-    }
+    };
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       // Unbind the event listener on clean up
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [ref, props]);
-}
+};
 
 const MinisterInfoContainer = (props) => {
   const [selectedMinisterRole, setSelectedMinisterRole] = useState(null);
@@ -41,7 +42,8 @@ const MinisterInfoContainer = (props) => {
   //Filters the shown ministers after the selected value
   const filteredMinisters = ministers.filter((minister) => {
     if (selectedMinisterRole === null) {
-      return ministers;
+      console.log(minister);
+      return minister.role;
     } else {
       return minister.role === selectedMinisterRole;
     }
@@ -51,11 +53,18 @@ const MinisterInfoContainer = (props) => {
   useOutsideAlerter(wrapperRef, props);
 
   return (
-    <div className="minister-container" ref={wrapperRef} onMouseLeave={props.mouseLeave}>
-      <MinisterSelect
-        list={sortedMinisterPosList}
-        selectDataCollect={selectDataHandler}
-      />
+    <div
+      className="minister-container"
+      ref={wrapperRef}
+      onMouseLeave={props.mouseLeave}
+    >
+      <div className="container-filter">
+        <MinisterCheckBox/>
+        <MinisterSelect
+          list={sortedMinisterPosList}
+          selectDataCollect={selectDataHandler}
+        />
+      </div>
       <ul>
         {props.index < data.regjeringer.length && props.index >= 0
           ? filteredMinisters.map((minister) => (

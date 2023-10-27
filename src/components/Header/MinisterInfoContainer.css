@@ -15,6 +15,14 @@
   margin: 0;
 }
 
+.container-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
 @keyframes onCreate {
   from {
     width: 7.5rem;
