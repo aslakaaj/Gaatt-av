@@ -10,7 +10,7 @@ const Footer = (props) => {
     <div className="footer">
       <p>
         Nettsiden er utviklet av{" "}
-        <a href="aslakjonsson.com">Aslak Aa. Jønsson</a> © 2024
+        <a href="https://aslakjonsson.com/">Aslak Aa. Jønsson</a> © 2024
       </p>
       <p className="footer-disclaimer" onClick={clickHandler}>ANSVARSFRASKRIVELSE</p>
     </div>
