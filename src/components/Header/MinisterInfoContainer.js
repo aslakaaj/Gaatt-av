@@ -22,6 +22,7 @@ const useOutsideAlerter = (ref, props) => {
 
 const MinisterInfoContainer = (props) => {
   const [selectedMinisterRole, setSelectedMinisterRole] = useState(null);
+  const [checkBoxValue, setCheckBoxValue] = useState(false);
 
   const ministers = data.regjeringer[props.index].ministers;
 
@@ -39,18 +40,29 @@ const MinisterInfoContainer = (props) => {
     setSelectedMinisterRole(selectValue);
   };
 
+  const boxChecked = (boxValue) => {
+    setCheckBoxValue(boxValue);
+  };
+
   //Filters the shown ministers after the selected value
-  const filteredMinisters = ministers.filter((minister) => {
-    if (selectedMinisterRole === null) {
-      console.log(minister);
-      return minister.role;
+  const filteredMinistersFromRole = ministers.filter((minister) => {
+    if (selectedMinisterRole === "Ingen..." || selectedMinisterRole === null) {
+      return ministers;
     } else {
+      //Legg inn IF checkbox er true, så skal endre lista
       return minister.role === selectedMinisterRole;
     }
   });
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef, props);
+
+  const completeFilteredList = filteredMinistersFromRole.filter((minister) => {
+    if (!checkBoxValue) {
+      return filteredMinistersFromRole;
+    }
+    return minister.controverse === checkBoxValue;
+  });
 
   return (
     <div
@@ -59,7 +71,7 @@ const MinisterInfoContainer = (props) => {
       onMouseLeave={props.mouseLeave}
     >
       <div className="container-filter">
-        <MinisterCheckBox/>
+        <MinisterCheckBox boxChecked={boxChecked} />
         <MinisterSelect
           list={sortedMinisterPosList}
           selectDataCollect={selectDataHandler}
@@ -67,7 +79,7 @@ const MinisterInfoContainer = (props) => {
       </div>
       <ul>
         {props.index < data.regjeringer.length && props.index >= 0
-          ? filteredMinisters.map((minister) => (
+          ? completeFilteredList.map((minister) => (
               <MinisterItem
                 key={Math.random()}
                 name={minister.name}
