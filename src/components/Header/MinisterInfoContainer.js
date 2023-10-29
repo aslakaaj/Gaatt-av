@@ -2,25 +2,27 @@ import "./MinisterInfoContainer.css";
 import MinisterItem from "./MinisterItem";
 import data from "../../data/data.json";
 import MinisterSelect from "./MinisterSelect";
-import { useEffect, useState, useRef} from "react";
+import { useEffect, useState, useRef } from "react";
+import MinisterCheckBox from "./MinisterCheckBox";
 
-const useOutsideAlerter = (ref, props) =>{
+const useOutsideAlerter = (ref, props) => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
         props.mouseLeave();
       }
-    }
+    };
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       // Unbind the event listener on clean up
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [ref, props]);
-}
+};
 
 const MinisterInfoContainer = (props) => {
   const [selectedMinisterRole, setSelectedMinisterRole] = useState(null);
+  const [checkBoxValue, setCheckBoxValue] = useState(false);
 
   const ministers = data.regjeringer[props.index].ministers;
 
@@ -38,11 +40,16 @@ const MinisterInfoContainer = (props) => {
     setSelectedMinisterRole(selectValue);
   };
 
+  const boxChecked = (boxValue) => {
+    setCheckBoxValue(boxValue);
+  };
+
   //Filters the shown ministers after the selected value
-  const filteredMinisters = ministers.filter((minister) => {
-    if (selectedMinisterRole === null) {
+  const filteredMinistersFromRole = ministers.filter((minister) => {
+    if (selectedMinisterRole === "Ingen..." || selectedMinisterRole === null) {
       return ministers;
     } else {
+      //Legg inn IF checkbox er true, så skal endre lista
       return minister.role === selectedMinisterRole;
     }
   });
@@ -50,15 +57,29 @@ const MinisterInfoContainer = (props) => {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef, props);
 
+  const completeFilteredList = filteredMinistersFromRole.filter((minister) => {
+    if (!checkBoxValue) {
+      return filteredMinistersFromRole;
+    }
+    return minister.controverse === checkBoxValue;
+  });
+
   return (
-    <div className="minister-container" ref={wrapperRef} onMouseLeave={props.mouseLeave}>
-      <MinisterSelect
-        list={sortedMinisterPosList}
-        selectDataCollect={selectDataHandler}
-      />
+    <div
+      className="minister-container"
+      ref={wrapperRef}
+      onMouseLeave={props.mouseLeave}
+    >
+      <div className="container-filter">
+        <MinisterCheckBox boxChecked={boxChecked} />
+        <MinisterSelect
+          list={sortedMinisterPosList}
+          selectDataCollect={selectDataHandler}
+        />
+      </div>
       <ul>
         {props.index < data.regjeringer.length && props.index >= 0
-          ? filteredMinisters.map((minister) => (
+          ? completeFilteredList.map((minister) => (
               <MinisterItem
                 key={Math.random()}
                 name={minister.name}

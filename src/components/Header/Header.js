@@ -7,7 +7,7 @@ const Header = (props) => {
   const [info, setInfo] = useState(false);
   const [firstTimeRenderDone, setFirstTimeRenderDone] = useState(false);
 
-  console.log("PROPS INDEX: " + props.index);
+  // console.log("PROPS INDEX: " + props.index);
   //Changes the website background color depending on which side the selected government is on
   if (data.regjeringer[props.index].side === "left" && props.index < data.regjeringer.length && props.index >= 0) {
     document.body.style = `background-color: var(--left-side-color);`;
