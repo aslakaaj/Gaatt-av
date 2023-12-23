@@ -3,6 +3,11 @@ import { useEffect, useState } from "react";
 
 const MinisterItem = (props) => {
   const [imgSrc, setImgSrc] = useState(null);
+  const date = new Date(props.date);
+
+  const month = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"];
+  const outDate = date.getDate()  + ". " + month[date.getMonth()] + " " + date.getFullYear();
+
 
   useEffect(() => {
     import(`../../images/${props.img}`).then((image) =>{
@@ -22,6 +27,7 @@ const MinisterItem = (props) => {
       <div className={styles["column-right"]}>
         <h1>{props.name}</h1>
         <p className={styles["minister-role"]}>Tidligere {props.role} ({props.party})</p>
+        <p className={styles["minister-role"]}>{outDate}</p>
         <p>
           {props.desc}
         </p>

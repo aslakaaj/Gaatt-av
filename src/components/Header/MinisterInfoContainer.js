@@ -57,6 +57,7 @@ const MinisterInfoContainer = (props) => {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef, props);
 
+  // Filters the data after if the data controverse
   const completeFilteredList = filteredMinistersFromRole.filter((minister) => {
     if (!checkBoxValue) {
       return filteredMinistersFromRole;
@@ -68,7 +69,7 @@ const MinisterInfoContainer = (props) => {
     <div
       className="minister-container"
       ref={wrapperRef}
-      onMouseLeave={props.mouseLeave}
+      // Commented out because testing without mouseLeave: onMouseLeave={props.mouseLeave}
     >
       <div className="container-filter">
         <MinisterCheckBox boxChecked={boxChecked} />
@@ -87,6 +88,7 @@ const MinisterInfoContainer = (props) => {
                 role={minister.role}
                 img={minister.img}
                 party={minister.party}
+                date={minister.departure_date}
               />
             ))
           : null}

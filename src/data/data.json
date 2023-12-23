@@ -1,233 +1,259 @@
 {
-  "regjeringer": [
-    {
-      "name": "Støre",
-      "side": "left",
-      "ministers": [
+    "regjeringer": [
         {
-          "name": "Anniken Huitfelt",
-          "desc": "Huitfeldts avgang som utenriksminister ble delvis trigget av aksje- og habilitetssaker kontroversen knyttet til hennes ektemanns aksjehandler, noe hun ikke hadde holdt seg tilstrekkelig orientert om. Statsminister Jonas Gahr Støre nevnte også Erna Solbergs aksjeskandale som en årsak til avgangen. Selv om det ble spekulert i media om endringer i regjeringen, indikerte kilder at Huitfeldt ønsket å fortsette i rollen, og avgangen kan ha skjedd mot hennes vilje. Hennes tidligere valg om ikke å søke gjenvalg i Arbeiderpartiets sentralstyre ble også nevnt som en faktor.",
-          "role":"Utenriksminister",
-          "img": "Anniken_Huitfeldt.webp",
-          "party": "AP",
-          "controverse": true
+            "name": "Støre",
+            "side": "left",
+            "ministers": [
+                {
+                    "name": "Anniken Huitfelt",
+                    "desc": "Huitfeldts avgang som utenriksminister ble delvis trigget av aksje- og habilitetssaker kontroversen knyttet til hennes ektemanns aksjehandler, noe hun ikke hadde holdt seg tilstrekkelig orientert om. Statsminister Jonas Gahr Støre nevnte også Erna Solbergs aksjeskandale som en årsak til avgangen. Selv om det ble spekulert i media om endringer i regjeringen, indikerte kilder at Huitfeldt ønsket å fortsette i rollen, og avgangen kan ha skjedd mot hennes vilje. Hennes tidligere valg om ikke å søke gjenvalg i Arbeiderpartiets sentralstyre ble også nevnt som en faktor.",
+                    "role": "Utenriksminister",
+                    "img": "Anniken_Huitfeldt.webp",
+                    "party": "AP",
+                    "controverse": true,
+                    "departure_date": "2023-10-16"
+                },
+                {
+                    "name": "Bjørnar Skjæran",
+                    "desc": "Skjærans avgang som fiskeri- og havminister kom med statsminister Jonas Gahr Støres rokeringer i regjeringen, noe som skapte misnøye, spesielt i Nordland. Kritikk inkluderer Skjærans påståtte manglende tilstedeværelse og interesse, mens andre roser hans bidrag til partiet og regionen. Avgangen, som ser ut til å være en del av større rokeringer, ble sett på som overraskende og uforståelig av noen, spesielt gitt Skjærans tidligere bidrag og regionens behov for representasjon på høyeste politiske nivå.",
+                    "role": "Fiskeri- og Havminister",
+                    "img": "Bjørnar_Skjæran.webp",
+                    "party": "AP",
+                    "controverse": false,
+                    "departure_date": "2023-10-16"
+                },
+                {
+                    "name": "Marte Mjøs Persen",
+                    "desc": "Persen en av de som gikk av som statsråd i forbindelse med endringene som ble gjort etter valget 2023. Det er ikke gitt noen spesiell grunn til avgangen, men skapte reaksjoner. Blant annet sa avtroppende byrådsleder i Bergen Rune Nakervik at hun var en \"bunnsolid sosialdemokrat\" som bidro til mye bra i arbeidslivet.",
+                    "role": "Arbeids- og Inkluderingsminister",
+                    "img": "Marte_Mjøs_Persen.webp",
+                    "party": "AP",
+                    "controverse": false,
+                    "departure_date": "2023-10-16"
+                },
+                {
+                    "name": "Sigbjørn Gjelsvik",
+                    "desc": "Gjelsvik er en av fire statsråd som måtte gå 16. Oktober 2023, han ble byttet ut med Erling Sande. Siden Gjelsvik la seg flat at han kysset en kollega, i September 2023, så er det noen som tror dette er grunnen til avgangen hans. Når Trygve Slagsvold Vedum fikk spørsmål om dette, svarte han at Gjelsvik ble byttet ut med Sande pga han var en større stemme fra distriktet.",
+                    "role": "Kommunal- og Distriktsminister",
+                    "img": "Sigbjørn_Gjelsvik.webp",
+                    "party": "SP",
+                    "controverse": true,
+                    "departure_date": "2023-10-16"
+                },
+                {
+                    "name": "Ola Borten Moe",
+                    "desc": "Varslet sin avgang som statsråd og som nestleder i Senterpartiet 21. juli 2023 etter at E24 avslørte at Moe hadde brutt regjeringens habilitetsregler. Han hadde kjøpt aksjer i våpen- og teknologiselskapet Kongsberg Gruppen og deretter deltatt i en regjeringskonferanse der selskapet indirekte ble tildelt en kontrakt.",
+                    "role": "Forsknings- og Høyere utdanningsminister",
+                    "img": "Ole_Borten_Moe.webp",
+                    "party": "SP",
+                    "controverse": true,
+                    "departure_date": "2023-08-04"
+                },
+                {
+                    "name": "Anette Trettebergstuen",
+                    "desc": "Kunngjorde 23. juni 2023 at hun ønsket å gå av som kulturminister på grunn av alvorlige feil hun hadde gjort knyttet til habilitet overfor tre personer. Hun uttalte at hun hadde hatt en feil tolkning eller feil forståelse av habilitetsreglene.",
+                    "role": "Kultur- og Likestillingsminister",
+                    "img": "Anette_Trettebergstuen.webp",
+                    "party": "AP",
+                    "controverse": true,
+                    "departure_date": "2023-06-28"
+                },
+                {
+                    "name": "Odd Roger Enoksen",
+                    "desc": "I april 2022 leverte Hilde Lengali, tidligere nestleder i Nordland Senterparti, et formelt varsel om upassende oppførsel og kommentarer fra Enoksen, i 2000 til 2001. Enoksen beklaget hendelsene. Senere kom en anonym kvinne fram med en lignende historie om sitt forhold til Enoksen da han var Olje- og Energiminister. Som følge av disse hendelsene kunngjorde Enoksen sin avgang som forsvarsminister den 9. april 2022.",
+                    "role": "Forsvarminister",
+                    "img": "Odd_Roger_Enoksen2.webp",
+                    "party": "SP",
+                    "controverse": true,
+                    "departure_date": "2022-04-12"
+                },
+                {
+                    "name": "Hadia Tajik",
+                    "desc": "I mars 2022 kunngjorde arbeids- og inkluderingsminister Hadia Tajik sin avgang som statsråd. Dette fulgte etter avsløringer i VG at Tajik, i perioden mellom 2006 og 2010, mottok skattefri pendlerbolig som politisk rådgiver, til tross for at hun aldri flyttet inn i eller betalte leie for en leiebolig i hjemfylket. I sin opprinnelige søknad til statsministerens kontor hadde Tajik oppgitt at hun ikke hadde boligutgifter på hjemstedet, og hun fikk deretter innvilget søknaden om pendlerbolig, men med beskjed om å skatte av boligens verdi. Bare seks dager senere sendte Tajik inn en ny søknad om pendlerbolig, denne gangen med opplysninger om boligutgifter på hjemstedet.",
+                    "role": "Arbeids- og Inkluderingsminister",
+                    "img": "Hadia_Tajik.webp",
+                    "party": "AP",
+                    "controverse": true,
+                    "departure_date": "2022-03-04"
+                }
+            ]
         },
         {
-          "name": "Bjørnar Skjæran",
-          "desc": "Skjærans avgang som fiskeri- og havminister kom med statsminister Jonas Gahr Støres rokeringer i regjeringen, noe som skapte misnøye, spesielt i Nordland. Kritikk inkluderer Skjærans påståtte manglende tilstedeværelse og interesse, mens andre roser hans bidrag til partiet og regionen. Avgangen, som ser ut til å være en del av større rokeringer, ble sett på som overraskende og uforståelig av noen, spesielt gitt Skjærans tidligere bidrag og regionens behov for representasjon på høyeste politiske nivå.",
-          "role":"Fiskeri- og Havminister",
-          "img": "Bjørnar_Skjæran.webp",
-          "party": "AP",
-          "controverse": false
-        },
-        {
-          "name": "Marte Mjøs Persen",
-          "desc": "Persen en av de som gikk av som statsråd i forbindelse med endringene som ble gjort etter valget 2023. Det er ikke gitt noen spesiell grunn til avgangen, men skapte reaksjoner. Blant annet sa avtroppende byrådsleder i Bergen Rune Nakervik at hun var en \"bunnsolid sosialdemokrat\" som bidro til mye bra i arbeidslivet.",
-          "role":"Arbeids- og Inkluderingsminister",
-          "img": "Marte_Mjøs_Persen.webp",
-          "party": "AP",
-          "controverse": false
-        },
-        {
-          "name": "Sigbjørn Gjelsvik",
-          "desc": "Gjelsvik er en av fire statsråd som måtte gå 16. Oktober 2023, han ble byttet ut med Erling Sande. Siden Gjelsvik la seg flat at han kysset en kollega, i September 2023, så er det noen som tror dette er grunnen til avgangen hans. Når Trygve Slagsvold Vedum fikk spørsmål om dette, svarte han at Gjelsvik ble byttet ut med Sande pga han var en større stemme fra distriktet.",
-          "role": "Kommunal- og Distriktsminister",
-          "img": "Sigbjørn_Gjelsvik.webp",
-          "party": "SP",
-          "controverse": true
-        },
-        {
-          "name": "Ola Borten Moe",
-          "desc": "Varslet sin avgang som statsråd og som nestleder i Senterpartiet 21. juli 2023 etter at E24 avslørte at Moe hadde brutt regjeringens habilitetsregler. Han hadde kjøpt aksjer i våpen- og teknologiselskapet Kongsberg Gruppen og deretter deltatt i en regjeringskonferanse der selskapet indirekte ble tildelt en kontrakt.",
-          "role": "Forsknings- og Høyere utdanningsminister",
-          "img": "Ole_Borten_Moe.webp",
-          "party": "SP",
-          "controverse": true
-        },
-        {
-          "name": "Anette Trettebergstuen",
-          "desc": "Kunngjorde 23. juni 2023 at hun ønsket å gå av som kulturminister på grunn av alvorlige feil hun hadde gjort knyttet til habilitet overfor tre personer. Hun uttalte at hun hadde hatt en feil tolkning eller feil forståelse av habilitetsreglene.",
-          "role": "Kultur- og Likestillingsminister",
-          "img": "Anette_Trettebergstuen.webp",
-          "party": "AP",
-          "controverse": true
-        },
-        {
-          "name": "Odd Roger Enoksen",
-          "desc": "I april 2022 leverte Hilde Lengali, tidligere nestleder i Nordland Senterparti, et formelt varsel om upassende oppførsel og kommentarer fra Enoksen, i 2000 til 2001. Enoksen beklaget hendelsene. Senere kom en anonym kvinne fram med en lignende historie om sitt forhold til Enoksen da han var Olje- og Energiminister. Som følge av disse hendelsene kunngjorde Enoksen sin avgang som forsvarsminister den 9. april 2022.",
-          "role": "Forsvarminister",
-          "img": "Odd_Roger_Enoksen2.webp",
-          "party": "SP",
-          "controverse": true
-        },
-        {
-          "name": "Hadia Tajik",
-          "desc": "I mars 2022 kunngjorde arbeids- og inkluderingsminister Hadia Tajik sin avgang som statsråd. Dette fulgte etter avsløringer i VG at Tajik, i perioden mellom 2006 og 2010, mottok skattefri pendlerbolig som politisk rådgiver, til tross for at hun aldri flyttet inn i eller betalte leie for en leiebolig i hjemfylket. I sin opprinnelige søknad til statsministerens kontor hadde Tajik oppgitt at hun ikke hadde boligutgifter på hjemstedet, og hun fikk deretter innvilget søknaden om pendlerbolig, men med beskjed om å skatte av boligens verdi. Bare seks dager senere sendte Tajik inn en ny søknad om pendlerbolig, denne gangen med opplysninger om boligutgifter på hjemstedet.",
-          "role": "Arbeids- og Inkluderingsminister",
-          "img": "Hadia_Tajik.webp",
-          "party": "AP",
-          "controverse": true
+            "name": "Solberg",
+            "side": "right",
+            "ministers": [
+                {
+                    "name": "Tine Sundtoft",
+                    "desc": "Etter forhandlingene til Paris-avtalen var unnagjort, valgte Sundtoft å trekke seg som Klima- og Miljøminister. Hun forklarer at på grunn av at jobben krevde mye tid, så fikk hun ikke være med så mye med familien som hun ønsket. `En personlig lettelse over å kunne gi seg på topp`, sier hun.",
+                    "role": "Klima- og Miljøminister",
+                    "img": "Tine_Sundtoft.webp",
+                    "party": "Høyre",
+                    "controverse": false,
+                    "departure_date": "2015-12-16"
+                },
+                {
+                    "name": "Thorhild Widvey",
+                    "desc": "Det vart meldt i 2015 at Widvey gir seg som kulturminister. Ingen tydlig grunn kommer fram, men mange tror hennes manglende kunnskap om kulturfeltet var grunnen til hun trakk seg ut. Hun startet så som styreleder i Statkraft i 2016.",
+                    "role": "Kultur- og Likestillingsminister",
+                    "img": "Thorhild_Widvey.webp",
+                    "party": "Høyre",
+                    "controverse": false,
+                    "departure_date": "2015-12-16"
+                },
+                {
+                    "name": "Robert Eriksson",
+                    "desc": "I følge Siv Jensen sin selvbiografi \" Med Egne Ord \", så ble Eriksson sparket grunnet han inngikk et forhold til en av sine nærmeste rådgivere, som bød på habilitetsproblemer. Andre grunner skal ha vært at Eriksson skal ha vært i konflikt med arbeidsorganisasjonene, pga hannes agressive tone mot de.",
+                    "role": "Arbeids- og Inkluderingsminister",
+                    "img": "Robert_Eriksson.webp",
+                    "party": "FrP",
+                    "controverse": true,
+                    "departure_date": "2015-12-16"
+                },
+                {
+                    "name": "Elisabeth Aspaker",
+                    "desc": "Aspaker hadde allerede i 2014 sikret seg sin drømme jobb som fylkesmann i Troms, og mulig grunnlaget for avgangen i 2016.",
+                    "role": "EU-minister",
+                    "img": "Elisabeth_Aspaker.webp",
+                    "party": "Høyre",
+                    "controverse": false,
+                    "departure_date": "2016-12-20"
+                },
+                {
+                    "role": "Justis- og Beredskapsminister",
+                    "name": "Anders Anundsen",
+                    "desc": "Etter 3 år som statsråd velger Anundsen å trekke seg av private grunner. Anundsens tid som justisminister ble også preget av kontroverser, inkludert saker knyttet til politiets beredskap og innvandringspolitikk, men skal ikke ha vært avgjørende årsak til hans avgang.",
+                    "img": "Anders_Anundsen.webp",
+                    "party": "FrP",
+                    "controverse": false,
+                    "departure_date": "2016-12-20"
+                },
+                {
+                    "role": "Olje- og Energiminister",
+                    "name": "Tord Lien",
+                    "desc": "Til tross for at Lien kunne ha fortsatt i sin posisjon frem til neste valg, valgte han å lytte til kona Kristin Reitstøen, som følte at hans politiske engasjement tok for mye tid bort fra familien. Etter flere år som Olje- og Energiminister, ønsket Lien å tilbringe mer tid med familien. Dette valget viste omsorg for hans kjæres behov og ble møtt med forståelse.",
+                    "img": "Tord_Lien.webp",
+                    "party": "FrP",
+                    "controverse": false,
+                    "departure_date": "2016-12-20"
+                },
+                {
+                    "role": "Barne- og Familieminister",
+                    "name": "Solveig Horne",
+                    "desc": "Solveig Horne trakk seg som Barne- og likestillingsminister i 2018 som en del av en kabinettendring i den norske regjeringen. Hun hadde innehatt stillingen siden 2013 som medlem av Fremskrittspartiet, men endringer i politiske prioriteringer og regjeringskonstellasjonen var avgjørende for hennes avgang.",
+                    "img": "Solveig_Horne.webp",
+                    "party": "FrP",
+                    "controverse": false,
+                    "departure_date": "2018-01-17"
+                },
+                {
+                    "role": "Justis- og Beredskapsminister",
+                    "name": "Per-Willy Amundsen",
+                    "desc": "Amundsen gikk av som statsråd i 2018 som følge av regjeringsendringer. Amundsens tid som justisminister ble preget av kontroverser, inkludert spørsmål knyttet til politiets beredskap og innvandringspolitikk. Dette kan ha spilt en rolle i hans avgang, men den primære årsaken var regjeringens politiske dynamikk og behovet for å tilpasse seg endringer i samarbeidet med andre partier i koalisjonen.",
+                    "img": "Per-Willy_Amundsen.webp",
+                    "party": "FrP",
+                    "controverse": false,
+                    "departure_date": "2018-01-17"
+                },
+                {
+                    "role": "Klima- og Miljøminister",
+                    "name": "Vidar Helgesen",
+                    "desc": "Som en del av kabinettendringer i den norske regjeringen i 2018, måtte Helgesen gå av som statsråd. Dette skjedde som en konsekvens av valget i 2017, der regjeringskoalisjonen måtte tilpasse seg nye politiske forhold og sette sammen et nytt kabinett. Helgesens avgang var en del av denne omorganiseringen og behovet for å tilpasse regjeringen til den nye politiske dynamikken i Stortinget.",
+                    "img": "Vidar_Helgesen.webp",
+                    "party": "Høyre",
+                    "controverse": false,
+                    "departure_date": "2018-01-17"
+                },
+                {
+                    "role": "Justis- og Beredskapsminister",
+                    "name": "Sylvi Listhaug",
+                    "desc": "Sylvi Listhaug måtte trekke seg etter bare 2 måneder som justisminister i 2018 på grunn av en kontrovers knyttet til en Facebook-post der hun anklaget Arbeiderpartiet for å sette terroristers rettigheter over nasjonens sikkerhet. Dette utløste en politisk krise og førte til mistillitsvotum mot henne. Selv om Listhaug senere ble gjeninnsatt i regjeringen i en annen rolle, var Facebook-innlegget og den påfølgende politiske uroen hovedårsaken til hennes avgang som justisminister.",
+                    "img": "Sylvi_Listhaug.webp",
+                    "party": "FrP",
+                    "controverse": true,
+                    "departure_date": "2018-03-20"
+                },
+                {
+                    "role": "Nærings- og Fiskeriminister",
+                    "name": "Per Sandberg",
+                    "desc": "Etter en kontrovers rundt en privat reise til Iran med sin daværende kjæreste, Bahareh Letnes, uten å informere verken statsministeren eller departementet på forhånd, førte til alvorlige sikkerhetsspørsmål og tvil om lojalitet til nasjonale interesser. På grunn av denne kontroversen og kritikk fra kolleger og opposisjonen, valgte Sandberg å trekke seg som fiskeriminister.",
+                    "img": "Per_Sandberg.webp",
+                    "party": "FrP",
+                    "controverse": true,
+                    "departure_date": "2018-08-13"
+                },
+                {
+                    "role": "Samferdselsminister",
+                    "name": "Ketil Solvik-Olsen",
+                    "desc": "Ketil Solvik-Olsen trakk seg som samferdselsminister for å følge kona til en legejobb i USA. Solvik-Olsen forklarte at han ønsket å støtte sin kones karriere, ettersom hun tidligere hadde tilpasset seg han. Dette var grunnen til at han ikke stilte til gjenvalg til Stortinget. Han takket derfor ja til en mulighet til å tilbringe et år i USA med familien.",
+                    "img": "Ketil_Solvik-Olsen.webp",
+                    "party": "FrP",
+                    "controverse": false,
+                    "departure_date": "2018-08-31"
+                },
+                {
+                    "role": "Landbruks- og matminister",
+                    "name": "Bård Hoksrud",
+                    "desc": "Når KRF i 2019 skulle innta kongens bord ble det gjort kabinettsendring og Hoksrud måtte tre til side til fordel for Olaug Bollestad.",
+                    "img": "Bård_Hoksrud.webp",
+                    "party": "FrP",
+                    "controverse": false,
+                    "departure_date": "2019-01-22"
+                },
+                {
+                    "role": "Justis- og Beredskapsminister",
+                    "name": "Tor Mikkel Wara",
+                    "desc": "Tor Mikkel Wara trakk seg som justisminister i 2019 etter at hans samboer, Laila Bertheussen, ble siktet for å ha påsatt brann i parets bil og for falske anklager. Wara oppga familiens behov som grunnen til sin avgang. Bertheussen ble senere tiltalt for alvorlige lovbrudd, inkludert angrep på høyeste statsorganers virksomhet og trusler. Avgangen til Wara var preget av en pågående politisk og rettslig prosess knyttet til saken.",
+                    "img": "Tor_Mikkel_Wara.webp",
+                    "party": "FrP",
+                    "controverse": true,
+                    "departure_date": "2019-03-29"
+                },
+                {
+                    "role": "Helse- og Omsorgsminister",
+                    "name": "Åse Michaelsen",
+                    "desc": "Til fordel for Sylvi Listhaug, måtte Michaelsen trekke seg som statsråd. Hun var den første personen til å ha denne ministerposten.",
+                    "img": "Åse_Michaelsen.webp",
+                    "party": "FrP",
+                    "controverse": false,
+                    "departure_date": "2019-05-03"
+                },
+                {
+                    "role": "Olje- og Energiminister",
+                    "name": "Kjell-Børge Freiberg",
+                    "desc": "Kjell-Børge Freiberg gikk av som Olje- og Energiminister til fordel for Sylvi Listhaug. Han gikk tilbake til å representere Nordland FrP på Stortinget.",
+                    "img": "Kjell-Børge_Freiberg.webp",
+                    "party": "Høyre",
+                    "controverse": false,
+                    "departure_date": "2019-12-18"
+                },
+                {
+                    "role": "Nærings- og Fiskeriminister",
+                    "name": "Geir-Inge Sivertsen",
+                    "desc": "Det kom kontroverser knyttet til hans styreverv og etterlønn, som hadde ført til manglende tillit fra opposisjonen. Han hadde tidligere søkt og mottatt etterlønn som ordfører samtidig som han var statssekretær, noe som vakte kritikk. Til tross for at han tilbakebetalte beløpet og ryddet opp i sakene, valgte han å gå av som minister da de kontroversielle sakene tok fokus bort fra hans arbeid som fiskeri- og sjømatminister.",
+                    "img": "Geir-Inge_Siversten.webp",
+                    "party": "Høyre",
+                    "controverse": true,
+                    "departure_date": "2020-03-02"
+                },
+                {
+                    "role": "Kunnskaps- og Integreringsminister",
+                    "name": "Trine Skei Grande",
+                    "desc": "Grande kunngjorde sin avgang som Venstre-leder og fra regjeringen i 2020. Skei Grande begrunnet sin avgang med behovet for å gi plass til nye ledere i partiet. Hun påpekte at hun tidligere hadde informert valgkomiteen om at hun var villig til å trekke seg som partileder dersom de fant en kandidat de var enige om. Etter at valgkomiteen enstemmig innstilte på gjenvalg av henne som partileder, følte Grande at hun ikke lenger kunne bringe partiet videre som hun hadde håpet.",
+                    "img": "Trine_Skei_Grande.webp",
+                    "party": "Venstre",
+                    "controverse": false,
+                    "departure_date": "2020-03-13"
+                },
+                {
+                    "role": "Barne- og Familieminister",
+                    "name": "Kjell Ingolf Ropstad",
+                    "desc": "Kjell Ingolf Ropstad gikk av som Barne- og familie minister i 2021 på grunn av kontroverser knyttet til hans bolig- og skattesaker. Han hadde tidligere oppgitt å bo hos foreldrene for å benytte seg av en pendlerbolig betalt av Stortinget. Senere, som statsråd, hevdet han at han ikke hadde utgifter til egen bolig og betalte skatt av statsrådsboligen. Etter forvirring om skatteplikten for statsrådsboligen og en etterbetaling, trakk han seg som minister.",
+                    "img": "Kjell_Ingolf_Ropstad.webp",
+                    "party": "KrF",
+                    "controverse": true,
+                    "departure_date": "2021-09-20"
+                }
+            ]
         }
-      ]
-    },
-
-    {
-      "name": "Solberg",
-      "side": "right",
-      "ministers": [
-        {
-          "name": "Tine Sundtoft",
-          "desc": "Etter forhandlingene til Paris-avtalen var unnagjort, valgte Sundtoft å trekke seg som Klima- og Miljøminister. Hun forklarer at på grunn av at jobben krevde mye tid, så fikk hun ikke være med så mye med familien som hun ønsket. `En personlig lettelse over å kunne gi seg på topp`, sier hun.",
-          "role": "Klima- og Miljøminister",
-          "img": "Tine_Sundtoft.webp",
-          "party": "Høyre",
-          "controverse": false
-        },
-        {
-          "name": "Thorhild Widvey",
-          "desc": "Det vart meldt i 2015 at Widvey gir seg som kulturminister. Ingen tydlig grunn kommer fram, men mange tror hennes manglende kunnskap om kulturfeltet var grunnen til hun trakk seg ut. Hun startet så som styreleder i Statkraft i 2016.",
-          "role": "Kultur- og Likestillingsminister",
-          "img": "Thorhild_Widvey.webp",
-          "party": "Høyre",
-          "controverse": false
-        },
-        {
-          "name": "Robert Eriksson",
-          "desc": "I følge Siv Jensen sin selvbiografi \" Med Egne Ord \", så ble Eriksson sparket grunnet han inngikk et forhold til en av sine nærmeste rådgivere, som bød på habilitetsproblemer. Andre grunner skal ha vært at Eriksson skal ha vært i konflikt med arbeidsorganisasjonene, pga hannes agressive tone mot de.",
-          "role": "Arbeids- og Inkluderingsminister",
-          "img": "Robert_Eriksson.webp",
-          "party": "FrP",
-          "controverse": true
-        },
-        {
-          "name": "Elisabeth Aspaker",
-          "desc": "Aspaker hadde allerede i 2014 sikret seg sin drømme jobb som fylkesmann i Troms, og mulig grunnlaget for avgangen i 2016.",
-          "role": "EU-minister",
-          "img": "Elisabeth_Aspaker.webp",
-          "party": "Høyre",
-          "controverse": false
-        },
-        {
-          "role": "Justis- og Beredskapsminister",
-          "name": "Anders Anundsen",
-          "desc": "Etter 3 år som statsråd velger Anundsen å trekke seg av private grunner. Anundsens tid som justisminister ble også preget av kontroverser, inkludert saker knyttet til politiets beredskap og innvandringspolitikk, men skal ikke ha vært avgjørende årsak til hans avgang.",
-          "img": "Anders_Anundsen.webp",
-          "party": "FrP",
-          "controverse": false
-        },
-        {
-          "role": "Olje- og Energiminister",
-          "name": "Tord Lien",
-          "desc": "Til tross for at Lien kunne ha fortsatt i sin posisjon frem til neste valg, valgte han å lytte til kona Kristin Reitstøen, som følte at hans politiske engasjement tok for mye tid bort fra familien. Etter flere år som Olje- og Energiminister, ønsket Lien å tilbringe mer tid med familien. Dette valget viste omsorg for hans kjæres behov og ble møtt med forståelse.",
-          "img": "Tord_Lien.webp",
-          "party": "FrP",
-          "controverse": false
-        },
-        {
-          "role": "Barne- og Familieminister",
-          "name": "Solveig Horne",
-          "desc": "Solveig Horne trakk seg som Barne- og likestillingsminister i 2018 som en del av en kabinettendring i den norske regjeringen. Hun hadde innehatt stillingen siden 2013 som medlem av Fremskrittspartiet, men endringer i politiske prioriteringer og regjeringskonstellasjonen var avgjørende for hennes avgang.",
-          "img": "Solveig_Horne.webp",
-          "party": "FrP",
-          "controverse": false
-        },
-        {
-          "role": "Justis- og Beredskapsminister",
-          "name": "Per-Willy Amundsen",
-          "desc": "Amundsen gikk av som statsråd i 2018 som følge av regjeringsendringer. Amundsens tid som justisminister ble preget av kontroverser, inkludert spørsmål knyttet til politiets beredskap og innvandringspolitikk. Dette kan ha spilt en rolle i hans avgang, men den primære årsaken var regjeringens politiske dynamikk og behovet for å tilpasse seg endringer i samarbeidet med andre partier i koalisjonen.",
-          "img": "Per-Willy_Amundsen.webp",
-          "party": "FrP",
-          "controverse": false
-        },
-        {
-          "role": "Klima- og Miljøminister",
-          "name": "Vidar Helgesen",
-          "desc": "Som en del av kabinettendringer i den norske regjeringen i 2018, måtte Helgesen gå av som statsråd. Dette skjedde som en konsekvens av valget i 2017, der regjeringskoalisjonen måtte tilpasse seg nye politiske forhold og sette sammen et nytt kabinett. Helgesens avgang var en del av denne omorganiseringen og behovet for å tilpasse regjeringen til den nye politiske dynamikken i Stortinget.",
-          "img": "Vidar_Helgesen.webp",
-          "party": "Høyre",
-          "controverse": false
-        },
-        {
-          "role": "Justis- og Beredskapsminister",
-          "name": "Sylvi Listhaug",
-          "desc": "Sylvi Listhaug måtte trekke seg etter bare 2 måneder som justisminister i 2018 på grunn av en kontrovers knyttet til en Facebook-post der hun anklaget Arbeiderpartiet for å sette terroristers rettigheter over nasjonens sikkerhet. Dette utløste en politisk krise og førte til mistillitsvotum mot henne. Selv om Listhaug senere ble gjeninnsatt i regjeringen i en annen rolle, var Facebook-innlegget og den påfølgende politiske uroen hovedårsaken til hennes avgang som justisminister.",
-          "img": "Sylvi_Listhaug.webp",
-          "party": "FrP",
-          "controverse": true
-        },
-        {
-          "role": "Nærings- og Fiskeriminister",
-          "name": "Per Sandberg",
-          "desc": "Etter en kontrovers rundt en privat reise til Iran med sin daværende kjæreste, Bahareh Letnes, uten å informere verken statsministeren eller departementet på forhånd, førte til alvorlige sikkerhetsspørsmål og tvil om lojalitet til nasjonale interesser. På grunn av denne kontroversen og kritikk fra kolleger og opposisjonen, valgte Sandberg å trekke seg som fiskeriminister.",
-          "img": "Per_Sandberg.webp",
-          "party": "FrP",
-          "controverse": true
-        },
-        {
-          "role": "Samferdselsminister",
-          "name": "Ketil Solvik-Olsen",
-          "desc": "Ketil Solvik-Olsen trakk seg som samferdselsminister for å følge kona til en legejobb i USA. Solvik-Olsen forklarte at han ønsket å støtte sin kones karriere, ettersom hun tidligere hadde tilpasset seg han. Dette var grunnen til at han ikke stilte til gjenvalg til Stortinget. Han takket derfor ja til en mulighet til å tilbringe et år i USA med familien.",
-          "img": "Ketil_Solvik-Olsen.webp",
-          "party": "FrP",
-          "controverse": false
-        },
-        {
-          "role": "Landbruks- og matminister",
-          "name": "Bård Hoksrud",
-          "desc": "Når KRF i 2019 skulle innta kongens bord ble det gjort kabinettsendring og Hoksrud måtte tre til side til fordel for Olaug Bollestad.",
-          "img": "Bård_Hoksrud.webp",
-          "party": "FrP",
-          "controverse": false
-        },
-        {
-          "role": "Justis- og Beredskapsminister",
-          "name": "Tor Mikkel Wara",
-          "desc": "Tor Mikkel Wara trakk seg som justisminister i 2019 etter at hans samboer, Laila Bertheussen, ble siktet for å ha påsatt brann i parets bil og for falske anklager. Wara oppga familiens behov som grunnen til sin avgang. Bertheussen ble senere tiltalt for alvorlige lovbrudd, inkludert angrep på høyeste statsorganers virksomhet og trusler. Avgangen til Wara var preget av en pågående politisk og rettslig prosess knyttet til saken.",
-          "img": "Tor_Mikkel_Wara.webp",
-          "party": "FrP",
-          "controverse": true
-        },
-        {
-          "role": "Helse- og Omsorgsminister",
-          "name": "Åse Michaelsen",
-          "desc": "Til fordel for Sylvi Listhaug, måtte Michaelsen trekke seg som statsråd. Hun var den første personen til å ha denne ministerposten.",
-          "img": "Åse_Michaelsen.webp",
-          "party": "FrP",
-          "controverse": false
-        },
-        {
-          "role": "Olje- og Energiminister",
-          "name": "Kjell-Børge Freiberg",
-          "desc": "Kjell-Børge Freiberg gikk av som Olje- og Energiminister til fordel for Sylvi Listhaug. Han gikk tilbake til å representere Nordland FrP på Stortinget.",
-          "img": "Kjell-Børge_Freiberg.webp",
-          "party": "Høyre",
-          "controverse": false
-        },
-        {
-          "role": "Nærings- og Fiskeriminister",
-          "name": "Geir-Inge Sivertsen",
-          "desc": "Det kom kontroverser knyttet til hans styreverv og etterlønn, som hadde ført til manglende tillit fra opposisjonen. Han hadde tidligere søkt og mottatt etterlønn som ordfører samtidig som han var statssekretær, noe som vakte kritikk. Til tross for at han tilbakebetalte beløpet og ryddet opp i sakene, valgte han å gå av som minister da de kontroversielle sakene tok fokus bort fra hans arbeid som fiskeri- og sjømatminister.",
-          "img": "Geir-Inge_Siversten.webp",
-          "party": "Høyre",
-          "controverse": true
-        },
-        {
-          "role": "Kunnskaps- og Integreringsminister",
-          "name": "Trine Skei Grande",
-          "desc": "Grande kunngjorde sin avgang som Venstre-leder og fra regjeringen i 2020. Skei Grande begrunnet sin avgang med behovet for å gi plass til nye ledere i partiet. Hun påpekte at hun tidligere hadde informert valgkomiteen om at hun var villig til å trekke seg som partileder dersom de fant en kandidat de var enige om. Etter at valgkomiteen enstemmig innstilte på gjenvalg av henne som partileder, følte Grande at hun ikke lenger kunne bringe partiet videre som hun hadde håpet.",
-          "img": "Trine_Skei_Grande.webp",
-          "party": "Venstre",
-          "controverse": false
-        },
-        {
-          "role": "Barne- og Familieminister",
-          "name": "Kjell Ingolf Ropstad",
-          "desc": "Kjell Ingolf Ropstad gikk av som Barne- og familie minister i 2021 på grunn av kontroverser knyttet til hans bolig- og skattesaker. Han hadde tidligere oppgitt å bo hos foreldrene for å benytte seg av en pendlerbolig betalt av Stortinget. Senere, som statsråd, hevdet han at han ikke hadde utgifter til egen bolig og betalte skatt av statsrådsboligen. Etter forvirring om skatteplikten for statsrådsboligen og en etterbetaling, trakk han seg som minister.",
-          "img": "Kjell_Ingolf_Ropstad.webp",
-          "party": "KrF",
-          "controverse": true
-        }
-      ]
-    }
-  ]
+    ]
 }

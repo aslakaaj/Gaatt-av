@@ -20,6 +20,10 @@ li + li {
     font-style: italic;
 }
 
+.minister-role + .minister-role {
+    margin-top: -1.2rem;
+}
+
 .column-left {
     grid-column-start: 1;
     max-height: 30rem;
