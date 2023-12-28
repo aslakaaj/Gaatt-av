@@ -14,10 +14,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--dark-text-color);
 
   transition: background-color 1s;
 
-  color: white;
   display: flex;
   justify-content: center;
   height: auto;

@@ -1,0 +1,17 @@
+.source {
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.source:hover {
+    cursor: pointer;
+}
+
+.link {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.link:hover {
+    cursor: pointer;
+}

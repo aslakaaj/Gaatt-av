@@ -8,6 +8,8 @@
   animation: onCreate 0.75s forwards;
 
   margin-bottom: 3rem;
+
+  user-select: text;
 }
 
 .minister-container ul {

@@ -1,6 +1,6 @@
 .item {
     max-width: 100%;
-    height: 30rem;
+    height: auto;
     padding: 0 2rem;
 
     display: grid;
@@ -22,6 +22,15 @@ li + li {
 
 .minister-role + .minister-role {
     margin-top: -1.2rem;
+}
+
+.minister-source{
+    font-size: small;
+    font-style: italic;
+}
+
+.minister-source:hover{
+    cursor: pointer;
 }
 
 .column-left {

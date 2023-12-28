@@ -1,5 +1,5 @@
 import "./MinisterInfoContainer.css";
-import MinisterItem from "./MinisterItem";
+import MinisterItem from "./MinisterItem/MinisterItem";
 import data from "../../data/data.json";
 import MinisterSelect from "./MinisterSelect";
 import { useEffect, useState, useRef } from "react";
@@ -65,6 +65,10 @@ const MinisterInfoContainer = (props) => {
     return minister.controverse === checkBoxValue;
   });
 
+  // const sourceClick = (source, source_text) => {
+  //   console.log(source_text + source);
+  // }
+
   return (
     <div
       className="minister-container"
@@ -89,6 +93,8 @@ const MinisterInfoContainer = (props) => {
                 img={minister.img}
                 party={minister.party}
                 date={minister.departure_date}
+                source={minister.source}
+                source_text={minister.source_text}
               />
             ))
           : null}
