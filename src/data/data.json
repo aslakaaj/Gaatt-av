@@ -5,6 +5,17 @@
             "side": "left",
             "ministers": [
                 {
+                    "name": "Sandra Borch",
+                    "desc": "E24 avslørte den 19 Januar 2024 at når Borch skrev masteroppgaven sin i 2014, har det blitt brukt flere identiske avsnitt fra masteroppgaver skriven av tidligere studenter, uten å oppgi kilder. Dette strider med hennes ansvar når det gjelder regelverk for gjennomføring av eksamen. Etter bare 5 måneder ved denne statsrådposten trakk hun seg samme dag som nyheten fra E24.",
+                    "role": "Forsknings- og Høyere utdanningsminister",
+                    "img": "Sandra_Borch.webp",
+                    "party": "SP",
+                    "controverse": true,
+                    "departure_date": "2024-01-19",
+                    "source": "https://www.nrk.no/tromsogfinnmark/deler-av-borchs-masteroppgave-identisk-med-tidligere-studenters-tekster-1.16724668",
+                    "source_text": "Grønning, T., Rostad, I. L., Kråkenes, C., Olsson, S. V., Nerbøberg, S., & Børringbo, A. (2024, Januar 19). Sandra Borch går av som statsråd: – Feilen, den er min. Hentet 19.01.2024 fra: "
+                },
+                {
                     "name": "Anniken Huitfelt",
                     "desc": "Huitfeldts avgang som utenriksminister ble delvis trigget av aksje- og habilitetssaker kontroversen knyttet til hennes ektemanns aksjehandler, noe hun ikke hadde holdt seg tilstrekkelig orientert om. Statsminister Jonas Gahr Støre nevnte også Erna Solbergs aksjeskandale som en årsak til avgangen. Selv om det ble spekulert i media om endringer i regjeringen, indikerte kilder at Huitfeldt ønsket å fortsette i rollen, og avgangen kan ha skjedd mot hennes vilje. Hennes tidligere valg om ikke å søke gjenvalg i Arbeiderpartiets sentralstyre ble også nevnt som en faktor.",
                     "role": "Utenriksminister",
