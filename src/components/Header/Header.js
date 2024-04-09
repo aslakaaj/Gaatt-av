@@ -1,11 +1,13 @@
 import "./Header.css";
 import data from "../../data/data.json";
-import { useState } from "react";
-import MinisterInfoContainer from "./MinisterInfoContainer";
+import { useEffect, useState } from "react";
+import MinisterInfoContainer from "./MinisterContainer/MinisterInfoContainer";
+import HeaderValues from "./HeaderValues";
 
 const Header = (props) => {
   const [info, setInfo] = useState(false);
   const [firstTimeRenderDone, setFirstTimeRenderDone] = useState(false);
+  const [ministerNum, setMinisterNum] = useState(data.regjeringer[props.index].ministers.length)
 
   // console.log("PROPS INDEX: " + props.index);
   //Changes the website background color depending on which side the selected government is on
@@ -15,6 +17,11 @@ const Header = (props) => {
   if (data.regjeringer[props.index].side === "right" && props.index < data.regjeringer.length && props.index >= 0) {
     document.body.style = `background-color: var(--right-side-color);`;
   }
+
+  useEffect(() => {
+    setMinisterNum(data.regjeringer[props.index].ministers.length);
+  }, [props.index])
+    
 
   const mouseEnterHandler = () => {
     setInfo(true);
@@ -29,29 +36,8 @@ const Header = (props) => {
 
   return (
     <div className="main-box">
-      <p>I {data.regjeringer[props.index].name} regjeringen:</p>
-      <h1 className="main-title">
-        HVOR MANGE HAR <br /> GÅTT AV SOM STATSRÅD?
-      </h1>
-      <h1 className="main-number">
-        {data.regjeringer[props.index].ministers.length.toString()}
-      </h1>
-
-      {!info && !firstTimeRenderDone && (
-        <div className="main-info" onMouseEnter={mouseEnterHandler}>
-          <span className="material-symbols-outlined">more_horiz</span>
-        </div>
-      )}
-      {!info && firstTimeRenderDone && (
-        <div
-          style={{ animation: "onLeave 0.25s forwards" }}
-          className="main-info"
-          onMouseEnter={mouseEnterHandler}
-        >
-          <span className="material-symbols-outlined">more_horiz</span>
-        </div>
-      )}
-      {info && <MinisterInfoContainer index={props.index} mouseLeave={mouseExitHandler} />}
+      <HeaderValues data={data.regjeringer[props.index].name} firstTimeRenderDone={firstTimeRenderDone} info={info} num={ministerNum.toString()} handler={mouseEnterHandler}/>
+      {info && <MinisterInfoContainer index={props.index} mouseLeave={mouseExitHandler} newCount={setMinisterNum}/>}
     </div>
   );
 };

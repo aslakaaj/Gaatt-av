@@ -1,11 +1,11 @@
 import "./MinisterInfoContainer.css";
-import MinisterItem from "./MinisterItem/MinisterItem";
-import data from "../../data/data.json";
+import MinisterItem from "../MinisterItem/MinisterItem";
+import data from "../../../data/data.json";
 import MinisterSelect from "./MinisterSelect";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef} from "react";
 import MinisterCheckBox from "./MinisterCheckBox";
 
-const useOutsideAlerter = (ref, props) => {
+const useOutsideAlerter = (ref, props, data, newCount) => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
@@ -15,21 +15,23 @@ const useOutsideAlerter = (ref, props) => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       // Unbind the event listener on clean up
+      newCount(data);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [ref, props]);
+  }, [ref, props, data, newCount]);
 };
 
-const MinisterInfoContainer = (props) => {
+const MinisterInfoContainer = ({index, newCount, ...restProps}) => {
   const [selectedMinisterRole, setSelectedMinisterRole] = useState(null);
   const [checkBoxValue, setCheckBoxValue] = useState(false);
+  const [newMinisterCount, setNewMinisterCount] = useState();
 
-  const ministers = data.regjeringer[props.index].ministers;
+  const ministers = data.regjeringer[index].ministers;
 
   let ministerPosList = [];
 
   //Adds the ministerpositions that are of the current selected government
-  data.regjeringer[props.index].ministers.forEach((ministers) => {
+  data.regjeringer[index].ministers.forEach((ministers) => {
     ministerPosList.push(ministers.role);
   });
 
@@ -55,7 +57,7 @@ const MinisterInfoContainer = (props) => {
   });
 
   const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef, props);
+  useOutsideAlerter(wrapperRef, restProps, ministers.length, newCount);
 
   // Filters the data after if the data controverse
   const completeFilteredList = filteredMinistersFromRole.filter((minister) => {
@@ -64,6 +66,17 @@ const MinisterInfoContainer = (props) => {
     }
     return minister.controverse === checkBoxValue;
   });
+
+//  Updates the minister count after the new list
+  useEffect(() => {
+    if (completeFilteredList !== undefined) {
+      setNewMinisterCount(completeFilteredList.length);
+      if (newMinisterCount !== undefined) {
+        newCount(newMinisterCount);
+        console.log(newMinisterCount);
+      }
+    }
+  }, [completeFilteredList, newMinisterCount, newCount]);
 
   // const sourceClick = (source, source_text) => {
   //   console.log(source_text + source);
@@ -83,7 +96,7 @@ const MinisterInfoContainer = (props) => {
         />
       </div>
       <ul>
-        {props.index < data.regjeringer.length && props.index >= 0
+        {index < data.regjeringer.length && index >= 0
           ? completeFilteredList.map((minister) => (
               <MinisterItem
                 key={Math.random()}
