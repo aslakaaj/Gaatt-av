@@ -5,6 +5,17 @@
             "side": "left",
             "ministers": [
                 {
+                    "name": "Ingvild Kjerkol",
+                    "desc": "Etter at VG i Januar 2024 avslørte at masteroppgaven til Kjerkol hadde 125 tilfeller av tekstlikhet, ble den undersøkt av Nord Universitet for plagiat. Under en pressekonferanse i April 2024 bekreftet Jonas Gahr Støre at nemnda ved Nord Universitet har konkludert med at hun jukset forsettlig på oppgaven. Støre sa da til pressen at han har kommet frem til at Kjerkol burde fratre som Helse- og omsorgsminister.",
+                    "role": "Helse- og Omsorgsminister",
+                    "img": "Ingvild_Kjerkol.webp",
+                    "party": "AP",
+                    "controverse": true,
+                    "departure_date": "2024-04-12",
+                    "source": "https://www.vg.no/nyheter/innenriks/i/15QQlK/ingvild-kjerkol-gar-av-etter-fuske-saken",
+                    "source_text": "Brekke, A. A. T., Røsvik, E., Johnsen, A. B., Fjellanger, R., Lægland, M., Olsen, P. S., Sveen, S. L., Breivik, E. M., & Enghaug, S., & Lie, F. R. (2024, April 12). Ingvild Kjerkol (Ap) trekker seg som helseminister. Hentet 12.04.2024 fra: "
+                },
+                {
                     "name": "Sandra Borch",
                     "desc": "E24 avslørte den 19 Januar 2024 at når Borch skrev masteroppgaven sin i 2014, har det blitt brukt flere identiske avsnitt fra masteroppgaver skriven av tidligere studenter, uten å oppgi kilder. Dette strider med hennes ansvar når det gjelder regelverk for gjennomføring av eksamen. Etter bare 5 måneder ved denne statsrådposten trakk hun seg samme dag som nyheten fra E24. ",
                     "role": "Forsknings- og Høyere utdanningsminister",

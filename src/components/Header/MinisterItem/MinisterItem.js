@@ -66,7 +66,7 @@ const MinisterItem = (props) => {
         <p className={styles["minister-role"]}>{outDate}</p>
         <p>{props.desc}</p>
         <div className={styles["minister-source"]} onClick={sourceClickHandler}>
-          {sourceActive == true ? (
+          {sourceActive === true ? (
             <MinisterSource
               source={props.source}
               source_text={props.source_text}

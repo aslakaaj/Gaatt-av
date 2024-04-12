@@ -1,4 +1,3 @@
-import { click } from "@testing-library/user-event/dist/click";
 import styles from "./MinisterSource.module.css";
 
 const MinisterSource = (props) => {
